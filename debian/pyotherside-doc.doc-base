@@ -1,0 +1,9 @@
+Document: pyotherside
+Title: Pyotherside Manual
+Author: Thomas Perl
+Abstract: This manual describes what pyotherside is, and how it can be used.
+Section: Programming/Python
+
+Format: HTML
+Index: /usr/share/doc/pyotherside-doc/html/index.html
+Files: /usr/share/doc/pyotherside-doc/html/*.html

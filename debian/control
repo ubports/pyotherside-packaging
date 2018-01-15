@@ -1,0 +1,110 @@
+Source: pyotherside
+Section: libs
+Priority: optional
+Maintainer: Dan Chapman <dan@ubports.com>
+Uploaders: Dan Chapman <dan@ubports.com>
+Build-Depends: debhelper (>= 9),
+               dh-exec,
+               python3-dev,
+               python3-sphinx,
+               qt5-qmake,
+               qtbase5-dev,
+               qtdeclarative5-dev,
+               xauth,
+               xvfb
+Standards-Version: 3.9.6
+X-Python3-Version: >= 3.3
+Vcs-Git: https://github.com/thp/pyotherside.git
+Vcs-Browser: https://github.com/thp/pyotherside.git
+Homepage: http://thp.io/2011/pyotherside/
+
+Package: qml-module-io-thp-pyotherside
+Multi-Arch: same
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Breaks: pyotherside (<< 1.4.0-2~)
+Replaces: pyotherside (<< 1.4.0-2~)
+Depends: python3, ${misc:Depends}, ${shlibs:Depends}
+Description: asynchronous Python 3 Bindings for Qt 5 (QML plugin)
+ A Qt 5 QML Plugin that provides access to a Python 3 interpreter from QML.
+ .
+ PyOtherSide is a Qt 5 QML Plugin that provides access to a Python 3
+ interpreter from QML. It was designed with mobile devices in mind, where
+ high-framerate touch interfaces are common, and where the user usually
+ interfaces only with one application at a time via a touchscreen. As such, it
+ is important to never block the UI thread, so that the user can always
+ continue to use the interface, even when the backend is processing,
+ downloading or calculating something in the background.
+ .
+ At its core, PyOtherSide is basically a simple layer that converts Qt (QML)
+ objects to Python objects and vice versa, with focus on asynchronous events
+ and continuation-passing style function calls.
+ .
+ While legacy versions of PyOtherSide worked with Qt 4.x and Python 2.x, its
+ focus now lies on Python 3.x and Qt 5. Python 3 has been out for several
+ years, and offers some nice language features and clean-ups, while Qt 5
+ supports most mobile platforms well, and has an improved QML engine and a
+ faster renderer (Qt Scene Graph) compared to Qt 4.
+ .
+ This package provides the QML plugin.
+
+Package: pyotherside-doc
+Section: doc
+Multi-Arch: foreign
+Architecture: all
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${sphinxdoc:Depends}
+Description: asynchronous Python 3 Bindings for Qt 5 (documentation)
+ A Qt 5 QML Plugin that provides access to a Python 3 interpreter from QML.
+ .
+ PyOtherSide is a Qt 5 QML Plugin that provides access to a Python 3
+ interpreter from QML. It was designed with mobile devices in mind, where
+ high-framerate touch interfaces are common, and where the user usually
+ interfaces only with one application at a time via a touchscreen. As such, it
+ is important to never block the UI thread, so that the user can always
+ continue to use the interface, even when the backend is processing,
+ downloading or calculating something in the background.
+ .
+ At its core, PyOtherSide is basically a simple layer that converts Qt (QML)
+ objects to Python objects and vice versa, with focus on asynchronous events
+ and continuation-passing style function calls.
+ .
+ While legacy versions of PyOtherSide worked with Qt 4.x and Python 2.x, its
+ focus now lies on Python 3.x and Qt 5. Python 3 has been out for several
+ years, and offers some nice language features and clean-ups, while Qt 5
+ supports most mobile platforms well, and has an improved QML engine and a
+ faster renderer (Qt Scene Graph) compared to Qt 4.
+ .
+ This package provides the HTML documentation as well as the set of examples.
+
+Package: pyotherside-tests
+Section: misc
+Multi-Arch: same
+Architecture: any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: qml-module-io-thp-pyotherside (= ${binary:Version}),
+         python3,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Asynchronous Python 3 Bindings for Qt 5 (tests)
+ A Qt 5 QML Plugin that provides access to a Python 3 interpreter from QML.
+ .
+ PyOtherSide is a Qt 5 QML Plugin that provides access to a Python 3
+ interpreter from QML. It was designed with mobile devices in mind, where
+ high-framerate touch interfaces are common, and where the user usually
+ interfaces only with one application at a time via a touchscreen. As such, it
+ is important to never block the UI thread, so that the user can always
+ continue to use the interface, even when the backend is processing,
+ downloading or calculating something in the background.
+ .
+ At its core, PyOtherSide is basically a simple layer that converts Qt (QML)
+ objects to Python objects and vice versa, with focus on asynchronous events
+ and continuation-passing style function calls.
+ .
+ While legacy versions of PyOtherSide worked with Qt 4.x and Python 2.x, its
+ focus now lies on Python 3.x and Qt 5. Python 3 has been out for several
+ years, and offers some nice language features and clean-ups, while Qt 5
+ supports most mobile platforms well, and has an improved QML engine and a
+ faster renderer (Qt Scene Graph) compared to Qt 4.
+ .
+ This package contains the test suite that can be started post-installation.

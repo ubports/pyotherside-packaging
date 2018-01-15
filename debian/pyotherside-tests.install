@@ -1,0 +1,3 @@
+#! /usr/bin/dh-exec
+tests/test_*/ /usr/lib/${DEB_HOST_MULTIARCH}/pyotherside/tests
+tests/tests /usr/lib/${DEB_HOST_MULTIARCH}/pyotherside/tests

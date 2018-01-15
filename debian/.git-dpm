@@ -1,0 +1,11 @@
+# see git-dpm(1) from git-dpm package
+ec8793dbe23df6f14a8e61bf3ee827b33b6b96aa
+ec8793dbe23df6f14a8e61bf3ee827b33b6b96aa
+ec8793dbe23df6f14a8e61bf3ee827b33b6b96aa
+ec8793dbe23df6f14a8e61bf3ee827b33b6b96aa
+pyotherside_1.4.0.orig.tar.gz
+08d3399298acd3e6e7c1aa1c9e4604ef15538c3a
+132306
+debianTag="debian/%e%v"
+patchedTag="patched/%e%v"
+upstreamTag="upstream/%e%u"

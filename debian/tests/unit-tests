@@ -1,0 +1,10 @@
+#!/bin/sh
+# autopkgtest check: run pyotherside unit tests and ensure everything passes
+# (C) 2014 Canonical Ltd.
+# Author: Zygmunt Krynicki <zygmunt.krynicki@canonical.com>
+
+set -e
+
+cd $ADTTMP
+xvfb-run -a /usr/lib/`dpkg-architecture -qDEB_HOST_MULTIARCH`/pyotherside/tests/tests 2>&1
+echo "unit-tests: OK"
