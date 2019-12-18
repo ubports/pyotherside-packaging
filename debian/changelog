@@ -1,3 +1,10 @@
+pyotherside (1.5.3+ubports3) xenial; urgency=medium
+
+  * Remove Python dependency (Fixes:
+    https://github.com/ubports/ubuntu-touch-meta/issues/56)
+
+ -- Alberto Mardegan <mardy@users.sourceforge.net>  Wed, 18 Dec 2019 21:53:43 +0300
+
 pyotherside (1.5.3+ubports2) xenial; urgency=medium
 
   * Import to UBports
