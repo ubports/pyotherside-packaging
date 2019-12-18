@@ -25,7 +25,7 @@ Architecture: any
 Pre-Depends: ${misc:Pre-Depends}
 Breaks: pyotherside (<< 1.4.0-2~)
 Replaces: pyotherside (<< 1.4.0-2~)
-Depends: python3, ${misc:Depends}, ${shlibs:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: asynchronous Python 3 Bindings for Qt 5 (QML plugin)
  A Qt 5 QML Plugin that provides access to a Python 3 interpreter from QML.
  .
